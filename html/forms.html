@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Internship</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-img">
+            <img src="../imge/Screenshot (157).png"/>
+        </div> 
+        <div class="form-header">
+            <h1>Internship Application Form - Prodigy InfoTech - August 2024</h1>
+            <p>Please fill all the required fields carefully, information provided will be used for Offer Letter and Completion Certificate.</p>
+            <p>All Virtual (Online) Internships will be for 4 weeks</p>
+        </div>
+        <div class="form-content">
+            <div class="form-perks">
+                <p>Perks of our Internships:</p>
+                <ul>
+                    <li>Offer Letter</li>
+                    <li>Industry Experience</li>
+                    <li>Verified Internship Certificate</li>
+                    <li>Letter Of Recommendation as per the performance</li>
+                </ul>
+                <p>Note: You can apply for one internship in one month otherwise your application will be rejected</p>
+            </div>
+            <div class="form-links">
+                <p>Links:</p>
+                <ul>
+                    <li><a href="https://prodigyinfotech.dev/#faq">Refer to FAQs here</a></li>
+                    <li><a href="https://www.linkedin.com/company/prodigy-infotech/">LinkedIn</a></li>
+                    <li><a href="https://t.me/prodigy_infotech">Telegram</a></li>
+                    <li><a href="https://instagram.com/prodigy_infotech">Instagram</a></li>
+                    <li><a href="https://prodigyinfotech.dev/">Website</a></li>
+                </ul>
+            </div>
+        </div>
+        <form class="application-form">
+            <div class="form-group">
+                <label>Full Name</label>
+                <h3>Fill it precisely as you wish it to appear on the certificates</h3>
+                <input type="text" name="fullName" placeholder="Enter your full name" required/>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter your email address" required/>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <label><input type="checkbox" name="gender" value="Male"/> Male</label>
+                <label><input type="checkbox" name="gender" value="Female"/> Female</label>
+            </div>
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <p>Add Country Code</p>
+                <input type="text" name="mobileNumber" required/>
+            </div>
+            <div class="form-group">
+                <label>Internship Track</label>
+                <label><input type="checkbox" name="internshipTrack" value="Web Development"/> Web Development</label>
+                <label><input type="checkbox" name="internshipTrack" value="Full-Stack Web Development"/> Full-Stack Web Development</label>
+                <label><input type="checkbox" name="internshipTrack" value="Generative AI"/> Generative AI</label>
+                <label><input type="checkbox" name="internshipTrack" value="Software Development"/> Software Development</label>
+                <label><input type="checkbox" name="internshipTrack" value="Android Development"/> Android Development</label>
+                <label><input type="checkbox" name="internshipTrack" value="Machine Learning"/> Machine Learning</label>
+                <label><input type="checkbox" name="internshipTrack" value="Data Science"/> Data Science</label>
+                <label><input type="checkbox" name="internshipTrack" value="Cyber Security"/> Cyber Security</label>
+            </div>
+            <div class="form-group">
+                <label>Highest Academic Qualification</label>
+                <p>Most recent or currently pursuing academic degree (e.g., B.Tech/B.E/M.C.A & others)</p>
+                <input type="text" name="highestAcademicQualification" required/>
+            </div>
+            <div class="form-group">
+                <label>College Name</label>
+                <p>Do NOT use acronyms (short forms - like MU for Mumbai University)</p>
+                <input type="text" name="collegeName" required/>
+            </div>
+            <div class="form-group">
+                <label>Passing Year</label>
+                <label><input type="checkbox" name="passingYear" value="2023"/> 2023</label>
+                <label><input type="checkbox" name="passingYear" value="2024"/> 2024</label>
+                <label><input type="checkbox" name="passingYear" value="2025"/> 2025</label>
+                <label><input type="checkbox" name="passingYear" value="2026"/> 2026</label>
+                <label><input type="checkbox" name="passingYear" value="2027"/> 2027</label>
+                <label><input type="checkbox" name="passingYear" value="2028"/> 2028</label>
+                <label><input type="checkbox" name="passingYear" value="Other"/> Other</label>
+            </div>
+            <div class="form-group">
+                <label>Country</label>
+                <p>(India and some other countries are at the top of the list)</p>
+                <select name="country" id="countryDropdown">
+                    <option value="" disabled selected>Select a country</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Any Questions?</label> 
+                <p>Any question regarding the internship</p>
+                <input type="text" name="anyQuestions" />
+            </div>
+            <div class="form-note">
+                <p>Note:</p>
+                <ol>
+                    <li>By applying now, you will be considered for the 01 August, 2024 - 31 August, 2024 batch. If you are unavailable during this period, please apply after 07 August, 2024.</li>
+                    <li>Offer Letters will be processed after 25 July, 2024. Recent applications after that may take up to 2-3 days to process. Thus, regularly check your inbox and spam folder for the mail.</li>
+                </ol>
+            </div>
+            <div class="form-group">
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+        <div class="backhome">
+            <a href="home.html"><button>Back to home</button></a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const countryDropdown = document.getElementById('countryDropdown');
+            const countries = [
+                "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
+                "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain",
+                "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
+                "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso",
+                "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic",
+                "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica", "Croatia",
+                "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic",
+                "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia",
+                "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany",
+                "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti",
+                "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel",
+                "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea North",
+                "Korea South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho",
+                "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi",
+                "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius",
+                "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique",
+                "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger",
+                "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama",
+                "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania",
+                "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines",
+                "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia",
+                "Seychelles", "Sierra Leone", "Singapore","Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan",
+                "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan",
+                "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia",
+                "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates",
+                "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City",
+                "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+            ];
+
+            countries.forEach(country => {
+                let option = document.createElement('option');
+                option.value = country;
+                option.textContent = country;
+                countryDropdown.appendChild(option);
+            });
+        });
+
+        document.querySelector('.application-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.querySelector('input[name="fullName"]').value,
+                email: document.querySelector('input[name="email"]').value,
+                gender: [...document.querySelectorAll('input[name="gender"]:checked')].map(cb => cb.value).join(', '),
+                mobileNumber: document.querySelector('input[name="mobileNumber"]').value,
+                internshipTrack: [...document.querySelectorAll('input[name="internshipTrack"]:checked')].map(cb => cb.value).join(', '),
+                highestAcademicQualification: document.querySelector('input[name="highestAcademicQualification"]').value,
+                collegeName: document.querySelector('input[name="collegeName"]').value,
+                passingYear: [...document.querySelectorAll('input[name="passingYear"]:checked')].map(cb => cb.value).join(', '),
+                country: document.querySelector('select[name="country"]').value,
+                anyQuestions: document.querySelector('input[name="anyQuestions"]').value
+            };
+
+            fetch('https://script.google.com/macros/s/AKfycbyyBejTi1flilEROZZMcmipDBthbXmUMnjug6XS9eCVW7fs1g9ij4yj1HDFuBhJUfF3/exec', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            }).then(response => response.text()).then(result => {
+                alert('Form submitted successfully!');
+                window.location.href = 'home.html'; 
+            }).catch(error => {
+                alert('Error submitting form');
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
